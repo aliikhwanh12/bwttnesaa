@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="hassets/img/icon.png" />
+
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png" />
+
+<link rel="mask-icon" type="image/x-icon" href="assets/img/icon.png" color="#111" />
+
+
+  <title>Perjalanan Hubungan Awan dan Nesa</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+  
+<style>
+body {
+  margin: 0;
+  background-color: #1d1d1e;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  outline: none;
+}
+
+.timeline-carousel {
+  padding: 86px 6.9444% 90px 6.9444%;
+  position: relative;
+  overflow: hidden;
+}
+.timeline-carousel:after, .timeline-carousel:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  height: 100%;
+  width: 6.9444%;
+  background-color: #1d1d1e;
+  z-index: 3;
+  width: 6.9444%;
+}
+.timeline-carousel:after {
+  left: 0;
+}
+.timeline-carousel:before {
+  right: 0;
+  opacity: 0;
+}
+.timeline-carousel .slick-list {
+  overflow: visible;
+}
+.timeline-carousel .slick-dots {
+  bottom: -73px;
+}
+.timeline-carousel h1 {
+  color: white;
+  font-size: 46px;
+  line-height: 50pd;
+  margin-bottom: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+.timeline-carousel__image {
+  padding-right: 30px;
+}
+.timeline-carousel__item {
+  cursor: pointer;
+}
+.timeline-carousel__item .media-wrapper {
+  opacity: 0.4;
+  padding-bottom: 71.4%;
+  -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.timeline-carousel__item:last-child .timeline-carousel__item-inner:after {
+  width: calc(100% - 30px);
+}
+.timeline-carousel__item-inner {
+  position: relative;
+  padding-top: 45px;
+}
+.timeline-carousel__item-inner:after {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  left: 0;
+  content: "";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.timeline-carousel__item-inner .year {
+  font-size: 36px;
+  line-height: 36px;
+  color: white;
+  display: table;
+  letter-spacing: -1px;
+  padding-right: 10px;
+  background-color: #1d1d1e;
+  z-index: 1;
+  position: relative;
+  margin: -15px 0 20px;
+  font-weight: 900;
+}
+.timeline-carousel__item-inner .year:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -10px;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  background-color: #1d1d1e;
+  z-index: 3;
+}
+.timeline-carousel__item-inner .month {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #b38c52;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.timeline-carousel__item-inner p {
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+  width: 60%;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.timeline-carousel__item-inner .read-more {
+  font-size: 12px;
+  color: #b38c52;
+  display: table;
+  margin-bottom: 10px;
+  font-weight: 900;
+  text-decoration: none;
+  position: relative;
+}
+.timeline-carousel__item-inner .read-more:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  border-bottom: 2px solid #b38c52;
+  -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -o-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.timeline-carousel__item-inner .read-more:hover:after {
+  width: 100%;
+}
+.timeline-carousel__item-inner .pointer {
+  height: 29px;
+  position: relative;
+  z-index: 1;
+  margin: -4px 0 16px;
+}
+.timeline-carousel__item-inner .pointer:after, .timeline-carousel__item-inner .pointer:before {
+  position: absolute;
+  content: "";
+}
+.timeline-carousel__item-inner .pointer:after {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  background-color: #b38c52;
+}
+.timeline-carousel__item-inner .pointer:before {
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 4px;
+  background-color: #b38c52;
+}
+.timeline-carousel .slick-active .media-wrapper {
+  opacity: 1 !important;
+}
+
+.slick-dots {
+  bottom: 60px;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 2;
+}
+.slick-dots li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 6px;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+.slick-dots li.slick-active button {
+  background: #b38c52;
+  border-color: #b38c52;
+}
+.slick-dots li button {
+  display: block;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.slick-dots li button:hover {
+  background: #b38c52;
+  border-color: #b38c52;
+}
+
+.link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  z-index: 9999;
+}
+.link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+.link .fa {
+  font-size: 28px;
+  margin-right: 8px;
+  color: #fff;
+}
+a{
+    width: 100%;
+    
+    color: #b38c52;
+    text-align: center;
+}
+a:active{
+    color: #b38c52;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <!--Timeline carousel-->
+
+<section class="timeline-carousel">
+    <h1>Perjalanan Hubungan Kita</h1>
+    <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+        <!--Timeline item-->
+        <div class="timeline-carousel__item">
+            <div class="timeline-carousel__image">
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h1.jpg') center center; background-size:cover;"></div>
+            </div>
+            <div class="timeline-carousel__item-inner">
+                <span class="year">Desember 2021</span>
+                <span class="month">Nesa Ultah</span>
+                <p>Kita mulai dari sini saja yah, baca sampe akhir biar bisa keluar dri page ini mwehehe. Dibulan ini awan pertama kali main keluar bareng nesa diluar jam sekolah. Waktu itu awan ga keburu buat beli kado topinya jadi awan langsung ketemu nesa dipurles dengan segenggam coklat silverqueen mwehehe</p>
+              
+            </div>
+        </div>
+       <!--/Timeline item-->
+       
+        <!--Timeline item-->
+        <div class="timeline-carousel__item">
+            <div class="timeline-carousel__image">
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h2.jpg') center center; background-size:cover;"></div>
+            </div>
+            <div class="timeline-carousel__item-inner">
+                <span class="year">Januari 2022</span>
+                <span class="month">foto di lorong awokwo</span>
+                <p>di Januari awan cuma dapet foto ini :" seinget awan ini kita jaman jamannya main dikelas nesa trus foto ini tuh kita ambil dilorong kantin diem diem karna malu awowkow</p>
+              
+            </div>
+        </div>
+       <!--/Timeline item-->
+       
+       <!--Timeline item-->
+        <div class="timeline-carousel__item">
+            <div class="timeline-carousel__image">
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h3.jpg') center center; background-size:cover;"></div>
+            </div>
+            <div class="timeline-carousel__item-inner">
+                <span class="year">Februari 2022</span>
+                <span class="month">Sakura GCC</span>
+                <p>Masih inget kan foto ini? yap ini foto kita waktu kita ketemu di kluster sakura GCC.. tepatnya setelah nesa pulang dari nenek nesa, trus kesana tanpa izin aowkowk..</p>
+              
+            </div>
+        </div>
+       <!--/Timeline item-->
+
+       <!--Timeline item-->
+        <div class="timeline-carousel__item">
+            <div class="timeline-carousel__image">
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h4.jpg') center center; background-size:cover;"></div>
+            </div>
+            <div class="timeline-carousel__item-inner">
+                <span class="year">Maret 2022</span>
+                <span class="month">Di Purles ama Jeslin	</span>
+                <p>hmmzz kayanya ini waktu nesaa adaa masalahh ama sipa kelas nesaa dehh yahh.. di purles sanaa nesaa ngeluapin semuanya ke awan dan jeslin.. awalnya itu nesa hiling ama jeslin doang, tapi awan ikut saja kesana karna mww ktemu nesaa ><</p>
+              
+            </div>
+        </div>
+       <!--/Timeline item-->
+       
+       <!--Timeline item-->
+        <div class="timeline-carousel__item">
+            <div class="timeline-carousel__image">
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h5.jpg') center center; background-size:cover;"></div>
+            </div>
+            <div class="timeline-carousel__item-inner">
+                <span class="year">April 2022</span>
+                <span class="month">Foto gajelas dilapangan sman :"</span>
+                <p>Harusnya ada foto yg awan sama nesa di gawang itu sii, tapi ga ketemu :".. awan punya fotoo inii doangg, soalnya kita kan jarang ketemu karna liburann</p>
+              
+            </div>
+        </div>
+       <!--/Timeline item-->
+       
+       <!--Timeline item-->
+        <div class="timeline-carousel__item">
+            <div class="timeline-carousel__image">
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h6.jpg') center center; background-size:cover;"></div>
+            </div>
+            <div class="timeline-carousel__item-inner">
+                <span class="year">Mei 2022</span>
+                <span class="month">SGC	</span>
+                <p>Eittss.. pastii mereka ngiranya kita mau nobar lagi kaya waktu ituu aowekowk.. kitaa ketemu di sgcc cumaa karnaa nesaa mww ngasii kadoo buat awann yahh.. awann masii ada bukunyaa ampe skrg mweheh</p>
+              
+            </div>
+        </div>
+       <!--/Timeline item-->
+
+       <!--Timeline item-->
+       <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/77.jpg') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+            <span class="year">Juni 2022</span>
+            <span class="month">Abis tes nari kreasi pa Budi</span>
+            <p>di bulan Juni ini kita lagi hectic nya buat ujian nari kreasii sbd.. mana awan urutan kedua lagih :') dibulan inii jugaa kitaa fotbar ama ka keziaa lhoo</p>
+          
+        </div>
+    </div>
+   <!--/Timeline item-->
+   
+    <!--Timeline item-->
+    <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/55.jpg') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+            <span class="year">Juli 2022</span>
+            <span class="month">Abis Demo Eskul</span>
+            <p>Salahsatu momen yang ga akan awan lupain di tahun ini, yap demo eskul.. Perasaan Senang, sedih, kesal, gembira ada disitu semua.. awan juga bisa liat nesaa kosplee ><</p>
+          
+        </div>
+    </div>
+   <!--/Timeline item-->
+   
+   <!--Timeline item-->
+    <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h9.jpg') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+            <span class="year">Agustus 2022</span>
+            <span class="month">Dibawah Pohon Rindang</span>
+            <p>Foto ini kalo ga salah awan lagi ngurus 17-an(?) aaa awann lupfaaa :( intinyaa ada foto ama jeslin kaya pasangann bnran huww >:(</p>
+          
+        </div>
+    </div>
+   <!--/Timeline item-->
+
+   <!--Timeline item-->
+    <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h10.jpg') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+            <span class="year">September 2022</span>
+            <span class="month">Dikelas nesaaa</span>
+            <p>Ini waktu kitaa isengg isengg ketemu karnaa nesaa disuruh ke kelass buat hiass kelas waktu lagi sakura cup kalo ga salah yahh.. orang orang ngehias kelas nesaa malaa enggaa kerjaa huuww</p>
+          
+        </div>
+    </div>
+   <!--/Timeline item-->
+   
+   <!--Timeline item-->
+    <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h11.jpg') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+            <span class="year">Oktober 2022</span>
+            <span class="month">Bulan Bahasa</span>
+            <p>"IHH PASANGAN WIBU" itu kata orang orang yang liat kita pose kaya gini aowkowk.. yaa awann akui keren sii posenya :"</p>
+          
+        </div>
+    </div>
+   <!--/Timeline item-->
+   
+   <!--Timeline item-->
+    <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h12.jpg') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+            <span class="year">November 2022</span>
+            <span class="month">Sakura Matsuri</span>
+            <p>AKHIRNYA KITA EVENT BARENG UNTUK PERTAMA KALINYA, walopun nesaa malah nganu ama orang lain huuww.. di bulan ini jugaa kitaa seneng seneng di dies natalisss.. sangatt seruww 9/10</p>
+          
+        </div>
+    </div>
+   <!--/Timeline item-->
+   <!--Timeline item-->
+   <div class="timeline-carousel__item">
+    <div class="timeline-carousel__image">
+        <div class="media-wrapper media-wrapper--overlay" style="background: url('assets/img/h13.jpg') center center; background-size:cover;"></div>
+    </div>
+    <div class="timeline-carousel__item-inner">
+        <span class="year">Desember 2022</span>
+        <span class="month">otw rapat eskul</span>
+        <p>Dan terakhir di bulan ini kita ketemu banyakk jugaaa di sekolaaa (awal bulan :") foto ini diambil sama tyoo waktu kitaa otww bwt rapat eskul bahas LPJ.. trus di bulan ini juga kita ke mixuee mwehehe.. Ni Ai Wo Wo Ai Ni..<br><a href="index.html"> KLIK DISINI KALO MW BALIK KE HOME</a></p>
+      
+    </div>
+</div>
+<!--/Timeline item-->
+    </div>
+</section>
+<!--Timeline carousel-->
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js'></script>
+      <script id="rendered-js" >
+$.js = function (el) {
+  return $('[data-js=' + el + ']');
+};
+
+function carousel() {
+  $.js('timeline-carousel').slick({
+    infinite: false,
+    arrows: false,
+    dots: true,
+    autoplay: false,
+    speed: 1100,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1 } }] });
+
+
+
+}
+
+carousel();
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
